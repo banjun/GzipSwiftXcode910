@@ -12,9 +12,12 @@
 		EAF963BA1FB17C6D008F395C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF963B81FB17C6D008F395C /* Main.storyboard */; };
 		EAF963BC1FB17C6D008F395C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF963BB1FB17C6D008F395C /* Assets.xcassets */; };
 		EAF963BF1FB17C6D008F395C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF963BD1FB17C6D008F395C /* LaunchScreen.storyboard */; };
+		ED8D8B021BCFB881C9ED2349 /* Pods_GzipSwiftXcode910.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49BD8E00903376CEC150131 /* Pods_GzipSwiftXcode910.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F111854FF7F5A74CE12C9D8 /* Pods-GzipSwiftXcode910.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GzipSwiftXcode910.release.xcconfig"; path = "Pods/Target Support Files/Pods-GzipSwiftXcode910/Pods-GzipSwiftXcode910.release.xcconfig"; sourceTree = "<group>"; };
+		AD9B7E2F5C64790C0421DBB6 /* Pods-GzipSwiftXcode910.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GzipSwiftXcode910.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GzipSwiftXcode910/Pods-GzipSwiftXcode910.debug.xcconfig"; sourceTree = "<group>"; };
 		EAF963B11FB17C6D008F395C /* GzipSwiftXcode910.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GzipSwiftXcode910.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF963B41FB17C6D008F395C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAF963B61FB17C6D008F395C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		EAF963BB1FB17C6D008F395C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAF963BE1FB17C6D008F395C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAF963C01FB17C6D008F395C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49BD8E00903376CEC150131 /* Pods_GzipSwiftXcode910.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GzipSwiftXcode910.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8D8B021BCFB881C9ED2349 /* Pods_GzipSwiftXcode910.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D3DC7FEB5C72B34B7859D6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F49BD8E00903376CEC150131 /* Pods_GzipSwiftXcode910.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94212F57A27FA39102C51EB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD9B7E2F5C64790C0421DBB6 /* Pods-GzipSwiftXcode910.debug.xcconfig */,
+				2F111854FF7F5A74CE12C9D8 /* Pods-GzipSwiftXcode910.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EAF963A81FB17C6D008F395C = {
 			isa = PBXGroup;
 			children = (
 				EAF963B31FB17C6D008F395C /* GzipSwiftXcode910 */,
 				EAF963B21FB17C6D008F395C /* Products */,
+				94212F57A27FA39102C51EB9 /* Pods */,
+				6D3DC7FEB5C72B34B7859D6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAF963C31FB17C6D008F395C /* Build configuration list for PBXNativeTarget "GzipSwiftXcode910" */;
 			buildPhases = (
+				9F1275DC23234F168D096155 /* [CP] Check Pods Manifest.lock */,
 				EAF963AD1FB17C6D008F395C /* Sources */,
 				EAF963AE1FB17C6D008F395C /* Frameworks */,
 				EAF963AF1FB17C6D008F395C /* Resources */,
+				7C2583670D65798ECA7FDC84 /* [CP] Embed Pods Frameworks */,
+				31B4171232E2D6991E26E122 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31B4171232E2D6991E26E122 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GzipSwiftXcode910/Pods-GzipSwiftXcode910-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C2583670D65798ECA7FDC84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GzipSwiftXcode910/Pods-GzipSwiftXcode910-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gzip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GzipSwiftXcode910/Pods-GzipSwiftXcode910-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F1275DC23234F168D096155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GzipSwiftXcode910-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAF963AD1FB17C6D008F395C /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		EAF963C41FB17C6D008F395C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD9B7E2F5C64790C0421DBB6 /* Pods-GzipSwiftXcode910.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +370,7 @@
 		};
 		EAF963C51FB17C6D008F395C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F111854FF7F5A74CE12C9D8 /* Pods-GzipSwiftXcode910.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

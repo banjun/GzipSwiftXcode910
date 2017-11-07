@@ -1,0 +1,6 @@
+framework module Pods_GzipSwiftXcode910 {
+  umbrella header "Pods-GzipSwiftXcode910-umbrella.h"
+
+  export *
+  module * { export * }
+}
